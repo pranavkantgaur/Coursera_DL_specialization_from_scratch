@@ -1,3 +1,6 @@
+# Reimplementing the notebook: https://github.com/pranavkantgaur/CourseraDLSpecialization/blob/master/Course1/Week1/Python_Basics_With_Numpy_v3a.ipynb from scratch.
+
+
 import math
 import numpy as np
 
@@ -69,5 +72,7 @@ def sigmoid_gradient(x):
     return g
 
 print("Sigmoid graidnent is: ", sigmoid_gradient(x))
+
+
 
 

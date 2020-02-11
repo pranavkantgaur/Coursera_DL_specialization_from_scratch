@@ -224,3 +224,20 @@ def vectorized_general_dot_product(v1):
 
 print("vectorized general dot product: ", vectorized_general_dot_product(v1))
 
+
+# implementing numpy version of loss functions L1 and L2
+def vectorized_L1(yhat, y):
+    loss = np.sum(np.abs(yhat - y)) # yhat and y are (m, 1) vectors
+    return loss
+
+yhat = np.array([0.9, 0.2, 0.1, 0.4, 0.9])
+y = np.array([1, 0, 0, 1, 1])
+print("vectorized L1 result: ", vectorized_L1(yhat, y))
+
+
+def vectorized_L2(yhat, y):
+    loss = np.sum(np.square(yhat - y))
+    return loss
+
+print("vectorized L2 result: ", vectorized_L2(yhat, y))
+
